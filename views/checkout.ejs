@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Stella Checkout</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+<!--     <link href="css/cart.css" rel="stylesheet">
+ -->  </head>
+
+  <body>
+<br>
+
+
+
+
+
+    <div class="container">
+      <div class="row">
+  <div class="col-sm-8"> 
+
+    <div class="card" >
+      <div class="card-header">
+        Checkout
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+
+          <strong> Shipping Address</strong><br><br>
+
+
+            <div class="row">
+    <div class="col-sm-8">
+    
+    
+
+          <div>
+            
+            <div class="bd-example">
+                <address>
+                  <strong>Twitter, Inc.</strong><br>
+                  1355 Market St, Suite 900<br>
+                  San Francisco, CA 94103<br>
+                  <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+
+                <address>
+                  <strong>Full Name</strong><br>
+                  <a href="mailto:#">first.last@example.com</a>
+                </address>
+              </div>
+          </div>
+
+</div>
+    <div class="col-sm-3">
+     
+ 
+          <button type="button" class="btn btn-link"><small style="font-size: 12px;">Change Address</small></button>
+   </div>
+  </div>
+
+
+        </li>
+        <li class="list-group-item">
+          <strong> Payment</strong> <br><br>
+
+
+          <form action="your-server-side-code" method="POST">
+              <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+                data-amount="999"
+                data-name="Stella"
+                data-description="Check Out"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="auto"
+                data-zip-code="true">
+              </script>
+            </form>
+
+
+
+        </li>
+        <li class="list-group-item"><strong>Item Ordered </strong> 
+          <br><br>
+
+
+
+          <div class="row bg-light" >
+           
+              <div class="col">
+                <div>                binifiMux Crib Hardware Screws, 50 Set(100Pcs) M6 Furniture Barrel Nut Bolt Assortment Kit, Hex Socket M6 x 20mm/ 30mm/ 40mm/ 50mm/ 60mm Crib Bolt Barrel Nut
+              </div>
+              
+              <small>by:ibide corp</small>
+
+
+              
+            <small>   <div class="row">
+                  <div class="col">
+                    <select>
+                      <option value="volvo">Qty:1</option>
+                      <option value="saab">2</option>
+                      <option value="opel">3</option>
+                      <option value="audi">4</option>
+                      <option value="audi">Delete</option>
+                      </select>
+                  </div>
+                  <div class="col" style="color: red;">
+                    $245.89
+                  </div>
+          
+              </div>
+
+              </small> 
+
+
+
+
+
+           
+              </div>
+              <!-- <div class="col">
+                2 of 3
+              </div> -->
+              <div class="col">
+                3 Days Standard Shipping
+              </div>
+            </div>
+            <hr width="50%">
+
+
+             <div class="row bg-light" >
+           
+              <div class="col">
+                <div>                
+Flammi M6 x 60mm Bolts Nuts Set Allen Head Screws Barrel Nuts 20Pcs for Crib Bunk Bed Furniture Cot Plated Zinc Steel
+              </div>
+              
+              <small>by:jgilis</small>
+
+
+             <small>  <div class="row">
+              <div class="col">
+                <select>
+                  <option value="volvo">Qty:1</option>
+                  <option value="saab">2</option>
+                  <option value="opel">3</option>
+                  <option value="audi">4</option>
+                  <option value="audi">Delete</option>
+                </select>
+              </div>
+              <div class="col" style="color: red;">
+                $75.54
+              </div>
+          
+            </div>
+          </small>
+
+
+
+
+
+           
+              </div>
+              <!-- <div class="col">
+                2 of 3
+              </div> -->
+              <div class="col">
+                3 Days Standard Shipping
+              </div>
+            </div>
+            <hr width="50%">
+
+
+
+
+
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="col-sm-4">
+
+    <div class="card">
+      <div class="card-body">
+
+         <div class="">
+
+      <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='/orderstatus';" >Place Order</button>
+
+      
+
+    </div>
+   
+
+
+
+    <br><br>
+        
+
+      </div>
+      
+    </div>
+
+   
+
+
+<div class="card">
+  <div class="card-body">
+
+     <div class="row">
+      <div class="col-sm-8">Items:</div>
+      <div class="col-sm-4">$23.12</div><br><br>
+
+      <div class="col-sm-8">Shipping & Handling:</div>
+      <div class="col-sm-4">$23.12</div><br><br>
+
+
+      <div class="col-sm-8">Total Before Tax:</div>
+      <div class="col-sm-4">$3.12</div><br><br>
+
+      <div class="col-sm-8">Estimated Tax:</div>
+      <div class="col-sm-4">$5.58</div><br><br>
+    </div>
+
+
+  
+     <div class="savedpymt">
+      
+
+    </div>
+    <div class="newpymt">
+      
+    </div>
+
+    
+
+     
+ 
+
+   </div>
+
+</div>
+ <div class="row">
+      <div class="col-sm-8">Order Total:</div>
+      <div class="col-sm-4">$5.58</div><br><br>
+  
+    </div>
+
+  </div>
+</div>
+
+      
+
+     </div>
+
+
+
+  </body>
+
+
+
+</html>

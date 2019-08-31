@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stella</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Stella</title>
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./public/css/login.css" />
+
+  </head>
+<body>
+
+    <div class="container">
+
+     <!--  <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form> -->
+
+                        <div class="login-form">
+                            <div id="contact-form"    >
+                                 
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter email" name='email'>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                 
+                                
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                               
+                                
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                             
+                                  <button type="submit" value="submit" id="loginbtn" class="btn btn-primary" >Submit</button>
+                                </div>
+     <p>Don't have an account?  <a href="/signup" class="card-link">Click here </a> to create one.</p> 
+
+   </div>
+ 
+
+    </div> <!-- /container -->
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+
+    <script>
+        // Initialize Firebase catalogue
+        var catalogueconfig = {
+            apiKey: "AIzaSyAs_fHHifyoLJTBUFXY41NUNj4Yawoa6Ug",
+            authDomain: "honeybox-catalogue.firebaseapp.com",
+            databaseURL: "https://honeybox-catalogue.firebaseio.com",
+            projectId: "honeybox-catalogue",
+            storageBucket: "honeybox-catalogue.appspot.com",
+            messagingSenderId: "606236254201"
+        };
+        firebase.initializeApp(catalogueconfig);
+    </script>
+<script >
+
+
+
+
+ $("#loginbtn").click(function(e) {
+
+    handleLogin()
+
+    
+    // servertoken()
+
+
+  });
+
+
+ function handleLogin() {
+       var email = document.getElementById("emailAddress").value;
+
+      var password = document.getElementById('exampleInputPassword1').value;
+       
+
+      // Sign in with email and pass.
+        // [START authwithemail]
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          // [START_EXCLUDE]
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+           // [END_EXCLUDE]
+        });
+
+
+
+    }
+
+
+
+  
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+  
+  
+
+</body>
+
+
+
+</html>

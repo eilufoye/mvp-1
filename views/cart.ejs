@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+   
+        <!-- 
+      <link rel="stylesheet" type="text/css" href="../styles/header.css"/>
+      <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+      <link rel="stylesheet" type="text/css" href="../plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="../styles/single_styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+      <link rel="stylesheet" href="css/cart.css">
+
+  
+</head>
+
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+
+
+ 
+
+<div class="shopping-cart" >
+   <p>Shopping Cart</p>
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+ <div id="myContent" ></div>
+
+
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal"> </div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax"> </div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping"> </div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total"> </div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+
+  <
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCGPmr77hB7zuHv8TSi0PG58A4cVzbHqjE",
+            authDomain: "honeybox-7b821.firebaseapp.com",
+            databaseURL: "https://honeybox-7b821.firebaseio.com",
+            projectId: "honeybox-7b821",
+            storageBucket: "",
+            messagingSenderId: "25436321618"
+        };
+        firebase.initializeApp(config);
+
+
+         // Initialize Firebase catalogue
+        var catalogueconfig = {
+            apiKey: "AIzaSyAs_fHHifyoLJTBUFXY41NUNj4Yawoa6Ug",
+            authDomain: "honeybox-catalogue.firebaseapp.com",
+            databaseURL: "https://honeybox-catalogue.firebaseio.com",
+            projectId: "honeybox-catalogue",
+            storageBucket: "honeybox-catalogue.appspot.com",
+            messagingSenderId: "606236254201"
+        };
+        firebase.initializeApp(catalogueconfig, "secondary");
+
+    </script>
+
+    <script  src="js/cart.js"></script>
+
+
+
+
+</body>
+
+</html>

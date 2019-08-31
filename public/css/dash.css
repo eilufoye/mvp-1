@@ -1,0 +1,97 @@
+
+
+.product-container {
+
+
+	  position: relative;
+
+}
+
+
+.product-info {
+/*   position: absolute;
+*/  bottom: 0;
+  left: 0;
+
+}
+
+
+.product-block {
+
+/*	width:auto; 
+*//*	background-color: blue;
+*/	text-align: left;
+	/*border-style: solid;
+	border-width: 1px;*/
+
+}
+
+.product-container {
+
+	padding: 20px;
+}
+
+#add-to-cart-btn {
+	position: absolute;
+	right: 10px;
+}
+
+.header-hr {
+	height: 1px;
+}
+
+
+#userinput {
+/*	position: absolute;
+*/  left: 50px;
+  width: calc(100% - 100px);
+/*  border: 1px solid black;
+*/   padding: 5px;
+  text-align: center;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * FilePond Custom Styles
+ */
+.filepond--drop-label {
+  color: #4c4e53;
+}
+
+.filepond--label-action {
+  -webkit-text-decoration-color: #babdc0;
+          text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  border-radius: 2em;
+  background-color: #edf0f4;
+  height: 2em;
+}
+
+.filepond--item-panel {
+  background-color: #595e68;
+}
+
+.filepond--drip-blob {
+  background-color: #7f8a9a;
+}
